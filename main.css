@@ -20,7 +20,6 @@
 {
 	float: right;
 	border-left: 3px solid black;
-	border-bottom: 3px solid black;
 	width: 220px;
 	background-image: url("images/navbar.png");
 	background-size: cover;
@@ -56,7 +55,7 @@ footer {
 	width:100%;        
 	margin-left:auto;
 	margin-right:auto;
-
+	border-top: 3px solid #000000;
 	color:#ffffff;
 	padding-top: 1px;
 }
