@@ -46,18 +46,19 @@ color:#000000
 }
 
 footer {
-clear:both;
-width:0px auto;
-height:50px;
-background-image:url("images/navbar.png");
-width:100%;        
-margin-left:auto;
-margin-right:auto;
-background-position:left;
-background-repeat:no-repeat;
-color:#ffffff;
-padding-top: 1px;
+	clear:both;
+	width:0px auto;
+	height:50px;
+	background-image:url("images/navbar.png");
+	width:100%;        
+	margin-left:auto;
+	margin-right:auto;
+	background-position:left;
+	background-repeat:no-repeat;
+	color:#ffffff;
+	padding-top: 1px;
 }
+
 canvas{
 	border: 1px dashed black; 
 	background: black;
@@ -65,12 +66,12 @@ canvas{
 
 #side_links
 {
-float:right;
-border-left: 3px solid black;
-border-bottom: 3px solid black;
-width: 220px;
-background-image:url("images/navbar.png");
-color:#ffffff;
+	float:right;
+	border-left: 3px solid black;
+	border-bottom: 3px solid black;
+	width: 220px;
+	background-image:url("images/navbar.png");
+	color:#ffffff;
 }
 
 #side_links_list li{
@@ -79,31 +80,30 @@ color:#ffffff;
 }
 ul#menu
 {
-padding: 0px;
-position: relative;
-margin: 0;
+	padding: 0px;
+	position: relative;
+	margin: 0;
 }
 
 ul#menu li
 {
-display: inline;
+	display: inline;
 }
 
 ul#menu li a 
 {
-background-color: #000000;
-padding: 10px 20px;
-text-decoration: none;
-line-height: 2.8em;
-color: #ffffff;
-border-radius: 4px 4px 0 0;
+	background-color: #000000;
+	padding: 10px 20px;
+	text-decoration: none;
+	line-height: 2.8em;
+	color: #ffffff;
+	border-radius: 4px 4px 0 0;
 }
 
 ul#menu li a:hover
 {
-background-color: #ffffff;
-color: #000000;
-
+	background-color: #ffffff;
+	color: #000000;
 }
 
 #Mainlinks{
@@ -111,10 +111,14 @@ color: #000000;
 }
 
 body{
-	background-image:url(/images/bg1.png);
+	background-image:url(images/bg1.png);
 }
 
 #logo{
 	width:500px;
 	height:100px
+}
+
+a{
+	color: black;
 }
