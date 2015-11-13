@@ -1,67 +1,32 @@
 #overall{
-border-top: 3px solid black;
-border-left: 3px solid black;
-border-right: 3px solid black;
-}
-
-header {
-background-image:url("images/header.png");
-width:100%;        
-margin-left:auto;
-margin-right:auto;
-background-position:center;
-background-repeat:no-repeat;
-height:180px;
-padding-top: 80px;
+	border-top: 3px solid black;
+	border-left: 3px solid black;
+	border-right: 3px solid black;
 }
 
 #nav {
-width:0px auto;
-height:45px;
-border-top: 3px solid black;
-border-bottom: 3px solid black;
-background-image:url("images/navbar.png");
-width:100%;        
-margin-left:auto;
-margin-right:auto;
-background-position:left;
-background-repeat:no-repeat;
-}
-
-#content {
-width:0px auto;
-height:0px auto;
-float:left;
-color:#000000
-}
-
-#sidebar{
-border-left: 3px solid black;
-border-bottom: 3px solid black;
-width:400px;
-height:300px;
-float:right;
-margin-bottom:25px;
-color:#000000
-}
-
-footer {
-	clear:both;
-	width:0px auto;
-	height:50px;
+	width: auto;
+	height:45px;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
 	background-image:url("images/navbar.png");
 	width:100%;        
 	margin-left:auto;
 	margin-right:auto;
 	background-position:left;
 	background-repeat:no-repeat;
-	color:#ffffff;
-	padding-top: 1px;
 }
 
-canvas{
-	border: 1px dashed black; 
-	background: black;
+#content {
+	width: auto;
+	height: auto;
+	float:left;
+	color:#000000
+}
+
+#logo{
+	width:500px;
+	height:100px
 }
 
 #side_links
@@ -74,22 +39,38 @@ canvas{
 	color:#ffffff;
 }
 
-#side_links_list li{
-	list-style: none;
-	text-indent: 10px
+header {
+	background-image:url("images/header.png");
+	width:100%;        
+	margin-left:auto;
+	margin-right:auto;
+	background-position:center;
+	background-repeat:no-repeat;
+	height:180px;
+	padding-top: 80px;
 }
 
-#Mainlinks{
-	center;
+footer {
+	clear: both;
+	width: auto;
+	height:50px;
+	background-image:url("images/navbar.png");
+	width:100%;        
+	margin-left:auto;
+	margin-right:auto;
+	background-position:left;
+	background-repeat:no-repeat;
+	color:#ffffff;
+	padding-top: 1px;
+}
+
+canvas{
+	border: 1px dashed black;
+	background: black;
 }
 
 body{
 	background-image:url(images/bg1.png);
-}
-
-#logo{
-	width:500px;
-	height:100px
 }
 
 a{
