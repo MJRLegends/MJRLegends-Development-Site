@@ -1,5 +1,5 @@
-@media only screen and ( min-width: 641px )
-{
+@media only screen and (min-width: 992px)
+{  
 	#overall{
 		border-top: 3px solid black;
 		border-left: 3px solid black;
@@ -91,11 +91,11 @@
 		background-position:left;
 		background-repeat:no-repeat;
 	}
-	
+
 	#nav > a
-    {
-        display: none;
-    }
+	{
+		display: none;
+	}
 
 	#nav > ul
 	{
