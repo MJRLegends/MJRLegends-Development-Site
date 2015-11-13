@@ -4,50 +4,44 @@
 	border-right: 3px solid black;
 }
 
-#nav {
-	width: auto;
-	height:45px;
-	border-top: 3px solid black;
-	border-bottom: 3px solid black;
-	background-image:url("images/navbar.png");
-	background-size: cover;
-	width:100%;        
-	margin-left:auto;
-	margin-right:auto;
-	background-position:left;
-	background-repeat:no-repeat;
-}
-
 #content {
 	width: auto;
 	height: auto;
-	float:left;
-	color:#000000;
+	float: left;
+	color: #000000;
 }
 
 #logo{
-	width:500px;
-	height:100px;
+	width: 500px;
+	height: 100px;
 }
 
 #side_links
 {
-	float:right;
+	float: right;
 	border-left: 3px solid black;
 	border-bottom: 3px solid black;
 	width: 220px;
-	background-image:url("images/navbar.png");
+	background-image: url("images/navbar.png");
 	background-size: cover;
-	color:#ffffff;
+	background-repeat:no-repeat;
+	color: #ffffff;
+	text-align: center;
+}
+
+body{
+	background-image: url(images/bg1.png);
+	background-size: cover;
+	background-repeat:no-repeat;
 }
 
 header {
-	background-image:url("images/header.png");
+	background-image: url("images/header.png");
 	background-size: cover;
-	width:100%;        
+	background-repeat:no-repeat;
+	width: auto;        
 	margin-left:auto;
 	margin-right:auto;
-	background-repeat: ;
 	height:180px;
 	padding-top: 80px;
 }
@@ -58,11 +52,11 @@ footer {
 	height:50px;
 	background-image:url("images/navbar.png");
 	background-size: cover;
+	background-repeat:no-repeat;
 	width:100%;        
 	margin-left:auto;
 	margin-right:auto;
-	background-position:left;
-	background-repeat:no-repeat;
+
 	color:#ffffff;
 	padding-top: 1px;
 }
@@ -72,11 +66,6 @@ canvas{
 	background: black;
 }
 
-body{
-	background-image:url(images/bg1.png);
-	background-size: cover;
-}
-
 a{
 	color: black;
 	padding-top: 1px;
@@ -84,11 +73,29 @@ a{
 	font-size: 18px;
 }
 
+
+
+/* Nav Bar Stuff */
+#nav {
+	width: auto;
+	height:45px;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	background-image:url("images/navbar.png");
+	background-size: cover;
+	background-repeat:no-repeat;
+	width:100%;        
+	margin-left:auto;
+	margin-right:auto;
+	background-position:left;
+	background-repeat:no-repeat;
+}
+
 ul#menu
 {
 	padding: 0px;
 	position: relative;
-	margin: 0;
+	margin: 0px;
 }
 
 ul#menu li
@@ -96,7 +103,7 @@ ul#menu li
 	display: inline;
 }
 
-ul#menu li a 
+ul#menu li a
 {
 	background-color: #000000;
 	padding: 10px 20px;
