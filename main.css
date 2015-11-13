@@ -78,6 +78,27 @@ canvas{
 	list-style: none;
 	text-indent: 10px
 }
+
+#Mainlinks{
+	center;
+}
+
+body{
+	background-image:url(images/bg1.png);
+}
+
+#logo{
+	width:500px;
+	height:100px
+}
+
+a{
+	color: black;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	font-size: 18px;
+}
+
 ul#menu
 {
 	padding: 0px;
@@ -104,21 +125,4 @@ ul#menu li a:hover
 {
 	background-color: #ffffff;
 	color: #000000;
-}
-
-#Mainlinks{
-	center;
-}
-
-body{
-	background-image:url(images/bg1.png);
-}
-
-#logo{
-	width:500px;
-	height:100px
-}
-
-a{
-	color: black;
 }
