@@ -103,7 +103,7 @@ var drawingSurface = canvas.getContext("2d");
 var sprites = []; //An array to store the sprites
 var map = []; //An array to store the sprites
 var menuButtons = []; //An array to store the main menu buttons
-var pausedButtons = []; //An array to store the pasued menu buttons
+var pausedButtons = []; //An array to store the paused menu buttons
 
 //Load the image
 var image = new Image();
@@ -124,7 +124,7 @@ var moveRight = false;
 var moveLeft = false;
 var pressedESC = false;
 
-var paused = false; // Used to check if the game has been pasued
+var paused = false; // Used to check if the game has been paused
 var gameStarted = false; // Used to check if the game has been started
 
 //Variables are set to actual values when the game is Started/Reset
@@ -135,7 +135,7 @@ var highestscore = 0; // Used store the players highest score
 var currentScreen = "mainMenu"; // Used store the current screen
 var playerState; // Used to store the player state/direction
 var playerAnimationDelay; // Used to store the player Animation Delay
-var spriteEatDelay; // Used to store the delay of the enemeies turning blue/eat mode
+var spriteEatDelay; // Used to store the delay of the enemies turning blue/eat mode
 
 //Event listeners
 window.addEventListener("keydown", function(event) {
@@ -300,7 +300,7 @@ function update(){ // Update Method
 				for (var i = 1; i < sprites.length; i++) {
 					if(sprites[i].isDead == false){
 						var temp;
-						//Checks if a player has eaten a enemeies after getting the big white dots
+						//Checks if a player has eaten a enemies after getting the big white dots
 						if(sprites[i].sourceX == 256){
 							temp = blockRectangle(player, sprites[i]);
 							if(temp != "none")
@@ -319,7 +319,7 @@ function update(){ // Update Method
 					}
 				}
 				
-				//Applying the enemeies textures back to normal after getting the big white dots			
+				//Applying the enemies textures back to normal after getting the big white dots			
 				spriteEatDelay++;
 				if(spriteEatDelay >= 250){
 					sprites[1].sourceX = 0;
@@ -328,7 +328,7 @@ function update(){ // Update Method
 					sprites[4].sourceX = 192;
 				}
 				
-				//Check if map has been compelted so it can reset
+				//Check if map has been completed so it can reset
 				var found = false;
 				for (var i = 1; i < map.length; i++) {
 					if(map[i].value == 2 || map[i].value == 3)
@@ -818,8 +818,12 @@ function render() { // Main Render method
 }
 
 function mainMenu(){ // Render method for the main menu
-	//Clears the screen
-    drawingSurface.clearRect(0, 0, canvas.width, canvas.height);
+	//Renders the background image for the main menu
+	var image = new Image();
+	image.src= "images/menuBackground.png";
+	image.blur = true;
+	drawingSurface.drawImage(image,0,0,canvas.width,canvas.height);
+	
 	//Renders menu title to the canvas
 	var gradient = drawingSurface.createLinearGradient(0, 0, canvas.width, 0);
 	gradient.addColorStop("0", "blue");
