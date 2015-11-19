@@ -70,8 +70,8 @@ var buttonObject = {
 	textOffsetY: 0,
 };
 
-//Map Layout 0: Blank space, 1: Wall, 2: Small white dot, 3: Big white dot, 4: Spawn Box Door
-var mapGrid = 
+// Level 1
+var mapGrid = //Map Layout 0: Blank space, 1: Wall, 2: Small white dot, 3: Big white dot, 4: Spawn Box Door
 [								//M
 	0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0,
 	0, 1, 3, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 3, 1, 0,
@@ -92,6 +92,32 @@ var mapGrid =
 	0, 1, 1, 2, 1, 2, 1, 2, 1, 1, 1, 1, 1, 2, 1, 2, 1, 2, 1, 1, 0,
 	0, 1, 2, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 2, 2, 1, 0,
 	0, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 0,
+	0, 1, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 1, 0,
+	0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0
+];
+
+//Level 2
+var mapGrid2 = //Map Layout 0: Blank space, 1: Wall, 2: Small white dot, 3: Big white dot, 4: Spawn Box Door
+[								//M
+	0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0,
+	0, 1, 3, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 3, 1, 0,
+	0, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 0,
+	0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 0,
+	0, 1, 2, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 2, 1, 0,
+	0, 1, 2, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 2, 2, 1, 0,
+	0, 1, 1, 1, 1, 2, 1, 1, 1, 0, 1, 0, 1, 1, 1, 2, 1, 1, 1, 1, 0,
+	0, 0, 0, 0, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 1, 2, 1, 0, 0, 0, 0,
+	1, 1, 1, 1, 1, 2, 1, 0, 1, 4, 4, 4, 1, 0, 1, 2, 1, 1, 1, 1, 1,
+	2, 2, 2, 2, 2, 2, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2, 2, 2, 2, 2, 2,
+	1, 1, 1, 1, 1, 2, 1, 0, 1, 1, 1, 1, 1, 0, 1, 2, 1, 1, 1, 1, 1,
+	0, 0, 0, 0, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 1, 2, 1, 0, 0, 0, 0,
+	0, 1, 1, 1, 1, 2, 1, 0, 1, 2, 1, 2, 1, 0, 1, 2, 1, 1, 1, 1, 0,
+	0, 1, 2, 2, 2, 2, 2, 2, 1, 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 1, 0,
+	0, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 0,
+	0, 1, 2, 2, 1, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 1, 2, 2, 1, 0,
+	0, 1, 1, 2, 1, 2, 1, 2, 1, 1, 1, 1, 1, 2, 1, 2, 1, 2, 1, 1, 0,
+	0, 1, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 1, 0,
+	0, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 0,
 	0, 1, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 1, 0,
 	0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0
 ];
@@ -136,6 +162,7 @@ var currentScreen = "mainMenu"; // Used store the current screen
 var playerState; // Used to store the player state/direction
 var playerAnimationDelay; // Used to store the player Animation Delay
 var spriteEatDelay; // Used to store the delay of the enemies turning blue/eat mode
+var round = 1;
 
 //Event listeners
 window.addEventListener("keydown", function(event) {
@@ -252,12 +279,12 @@ function update(){ // Update Method
 				map = [];  // Clears the map array
 				gameStart = true;
 				paused = false;
-				score = 0;
 				playerState = 1;
 				playerAnimationDelay = 0;
-				spriteEatDelay = 0;
+				spriteEatDelay = 300;
 				loadSprites();
-				loadMap();
+				loadMap(1);
+				round = 1;
 			} 
 			else {		
 				enemySpriteMovement();
@@ -285,6 +312,7 @@ function update(){ // Update Method
 							map[i].sourceX = 512;
 							map[i].value = 0;
 							spriteEatDelay = 0;
+							score++;
 							for (var k = 1; k < sprites.length; k++) {
 								if(sprites[k].isDead == false){
 									sprites[k].sourceX = 256;
@@ -299,18 +327,18 @@ function update(){ // Update Method
 				
 				for (var i = 1; i < sprites.length; i++) {
 					if(sprites[i].isDead == false){
-						var temp;
+						var tempCollision;
 						//Checks if a player has eaten a enemies after getting the big white dots
 						if(sprites[i].sourceX == 256){
-							temp = blockRectangle(player, sprites[i]);
-							if(temp != "none")
+							tempCollision = blockRectangle(player, sprites[i]);
+							if(tempCollision != "none")
 								sprites[i].isDead = true;
 						}
 						
 						//Checks if a enemy has eaten the player and reset the game is true
 						else{
-							temp = blockRectangle(sprites[i], player);
-							if(temp != "none"){
+							tempCollision = blockRectangle(sprites[i], player);
+							if(tempCollision != "none"){
 								gameStart = false; // Makes the game reset
 								if (highestscore < score)
 									highestscore = score;
@@ -321,7 +349,13 @@ function update(){ // Update Method
 				
 				//Applying the enemies textures back to normal after getting the big white dots			
 				spriteEatDelay++;
-				if(spriteEatDelay >= 250){
+				if(spriteEatDelay == 200 || spriteEatDelay == 220 || spriteEatDelay == 240 ){
+					sprites[1].sourceX = 256;
+					sprites[2].sourceX = 256;
+					sprites[3].sourceX = 256;
+					sprites[4].sourceX = 256;
+				}
+				else if(spriteEatDelay == 210 || spriteEatDelay == 230 || spriteEatDelay == 250 ){
 					sprites[1].sourceX = 0;
 					sprites[2].sourceX = 64;
 					sprites[3].sourceX = 128;
@@ -334,10 +368,27 @@ function update(){ // Update Method
 					if(map[i].value == 2 || map[i].value == 3)
 						found = true;
 				}
-				if(found == false)
-					gameStart = false;
+				if(found == false){
+					sprites = []; // Clears the sprite array
+					map = [];  // Clears the map array
+					gameStart = true;
+					paused = false;
+					playerState = 1;
+					playerAnimationDelay = 0;
+					spriteEatDelay = 300;
+					loadSprites();
+					if(score % 160 == 0){
+						loadMap(2);
+						round++;
+					}
+					else if(score % 315 == 0){
+						loadMap(1);
+						score = 0;
+						round = 1;
+					}
 					if (highestscore < score)
 						highestscore = score;
+				}
 					
 				//Respawn Enemies
 				for (var i = 1; i < sprites.length; i++) {
@@ -361,61 +412,68 @@ function update(){ // Update Method
 	render(); //Render the screen
 }
 
-function loadMap(){ // Generate the map
+function loadMap(mapNumber){ // Generate the map
 	var mapX = 0;
 	var mapY = 21 * 2;
-	var temp;
-	for(var i = 0; i < mapGrid.length; i++){
-		if(mapGrid[i] == 0){
-			temp = Object.create(spriteObject);
-			temp.sourceX = 512;
-			temp.x = mapX;
-			temp.y = mapY;
-			temp.width = 24;
-			temp.height = 24;
-			temp.value = mapGrid[i];
-			map.push(temp);
+	var tempMap;
+	map = [];
+	var mapArray;
+	if(mapNumber == 1)
+		mapArray = mapGrid;
+	else if(mapNumber == 2)
+		mapArray = mapGrid2;
+	for(var i = 0; i < mapArray.length; i++){
+		if(mapArray[i] == 0){
+			tempMap = Object.create(spriteObject);
+			tempMap.sourceX = 512;
+			tempMap.x = mapX;
+			tempMap.y = mapY;
+			tempMap.width = 24;
+			tempMap.height = 24;
+			tempMap.value = mapArray[i];
+			map.push(tempMap);
 		}			
-		else if(mapGrid[i] == 1){
-			temp = Object.create(spriteObject);
-			temp.sourceX = 128;
-			temp.x = mapX;
-			temp.y = mapY;
-			temp.width = 24;
-			temp.height = 24;
-			temp.value = mapGrid[i];
-			map.push(temp);
+		else if(mapArray[i] == 1){
+			tempMap = Object.create(spriteObject);
+			tempMap.sourceX = 128;
+			tempMap.x = mapX;
+			tempMap.y = mapY;
+			tempMap.width = 24;
+			tempMap.height = 24;
+			tempMap.value = mapArray[i];
+			map.push(tempMap);
 		}
-		else if(mapGrid[i] == 2){
-			temp = Object.create(spriteObject);
-			temp.sourceX = 0;
-			temp.x = mapX;
-			temp.y = mapY;
-			temp.width = 24;
-			temp.height = 24;
-			temp.value = mapGrid[i];
-			map.push(temp);
+		else if(mapArray[i] == 2){
+			tempMap = Object.create(spriteObject);
+			tempMap.sourceX = 0;
+			tempMap.x = mapX;
+			tempMap.y = mapY;
+			tempMap.width = 24;
+			tempMap.height = 24;
+			tempMap.value = mapArray[i];
+			map.push(tempMap);
+			console.log(1);
 		}
-		else if(mapGrid[i] == 3){
-			temp = Object.create(spriteObject);
-			temp.sourceX = 64;
-			temp.x = mapX;
-			temp.y = mapY;
-			temp.width = 24;
-			temp.height = 24;
-			temp.value = mapGrid[i];
-			map.push(temp);
+		else if(mapArray[i] == 3){
+			tempMap = Object.create(spriteObject);
+			tempMap.sourceX = 64;
+			tempMap.x = mapX;
+			tempMap.y = mapY;
+			tempMap.width = 24;
+			tempMap.height = 24;
+			tempMap.value = mapArray[i];
+			map.push(tempMap);
 		}
-		else if(mapGrid[i] == 4){
-			temp = Object.create(spriteObject);
-			temp.sourceX = 320;
-			temp.sourceY = 64;
-			temp.x = mapX;
-			temp.y = mapY;
-			temp.width = 24;
-			temp.height = 24;
-			temp.value = mapGrid[i];
-			map.push(temp);
+		else if(mapArray[i] == 4){
+			tempMap = Object.create(spriteObject);
+			tempMap.sourceX = 320;
+			tempMap.sourceY = 64;
+			tempMap.x = mapX;
+			tempMap.y = mapY;
+			tempMap.width = 24;
+			tempMap.height = 24;
+			tempMap.value = mapGrid[i];
+			map.push(tempMap);
 		}
 		mapX += 24;
 		if(i == 20 || i == 41 || i == 62 || i == 83 || i == 104 || i == 125 || i == 146 || i == 167 || i == 188 || i == 209 || i == 230 || i == 251 || i == 272 || i == 293 || i == 314 || i == 335 || i == 356 || i == 377 || i == 398 || i == 419){
@@ -779,8 +837,9 @@ function render() { // Main Render method
 		drawingSurface.shadowBlur = 2;
 		drawingSurface.shadowColor="#FFFFFF";
 		drawingSurface.font = "25px Verdana";
-		drawingSurface.fillText("Score : " + score, 15, 25);
-		drawingSurface.fillText("Highest Score : " + highestscore, 200, 25);
+		drawingSurface.fillText("Round : " + round, 15, 25);
+		drawingSurface.fillText("Score : " + score, canvas.width - 170, 25);
+		drawingSurface.fillText("Highest Score : " + highestscore, 15, canvas.height - 25);
 		drawingSurface.fillText("FPS : " + fps.getFPS(), canvas.width - 150, canvas.height - 25);
 		
 		//Paused Text/Buttons

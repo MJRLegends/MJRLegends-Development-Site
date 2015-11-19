@@ -51,25 +51,25 @@ var image = new Image();
 image.addEventListener("load", gameMain, false);
 image.src = "images/spritesheet.png";
 
-//Arrow key codes
-var RIGHT = 39;
-var LEFT = 37;
-var ESC = 27;
+//Key codes
+var RIGHT = 39; // Used to store the key code for the RIGHT button
+var LEFT = 37; // Used to store the key code for the LEFT button
+var ESC = 27; // Used to store the key code for the ESC button
 
 //Directions
-var moveRight = false;
-var moveLeft = false;
-var pressedESC = false;
-var paused = false;
-var gameStarted = false;
+var moveRight = false; // Used to check if the RIGHT arrow button has been pressed
+var moveLeft = false; // Used to check if the LEFT arrow button has been pressed
+var pressedESC = false; // Used to check if the ESC button has been pressed
+var paused = false; // Used to check if game has been paused
+var gameStarted = false; // Used to check if game has been started
 
 //Variables are set to actual values when the game is Started/Reset
 var playerspeed = 0; // Used for player speed
-var yLevel = 0; // Used saving the Current y level when rendering the lines/platforms
+var yLevel = 0; // Used for saving the current y level when rendering the lines/platforms
 var ySpacing = 0; // Used for the spacing between each lines/platforms
 var scrollingSpeed = 0; // Used for the speed that the scrolling effect happens and the lines/platforms move up
 var spawned = false; // Used to check if the lines/platforms have been spawned
-var gameStart = false; // Used to check if game has been started
+var gameStart = false; // Used to check if game is active
 var player; // Used to store the player sprite object
 var score = 0; // Used for the score
 var lineTick = 0; // Used to store the number for calculating score
